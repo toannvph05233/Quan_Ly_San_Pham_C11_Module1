@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    td {
+      padding: 20px 60px;
+    }
+
+    table {
+      border: 1px solid black;
+    }
+
+    tr:nth-child(odd) {
+      background: beige;
+    }
+
+    .abc{
+      height: 500px;
+      background: beige;
+    }
+  </style>
+  <script src="model/Account.js"></script>
+
+</head>
+<body>
+<div align="center">
+  <a href="">footer</a>
+  <h1>Quản Lý Tài Khoản</h1>
+  <input id="search" oninput="findByUsername()" placeholder="Nhập username" style="width: 300px; height: 40px">
+  <br>
+  <br>
+  <table>
+    <tr style="background: cornflowerblue">
+      <td>Id</td>
+      <td>username</td>
+      <td>password</td>
+      <td>avatar</td>
+      <td>role</td>
+      <td>Edit</td>
+      <td>Delete</td>
+    </tr>
+    <tbody id="display">
+
+    </tbody>
+  </table>
+  <footer id="footer" class="abc">
+    <h1>Nguyễn Văn Toàn</h1>
+  </footer>
+</div>
+
+
+</body>
+</html>
+
+<script src="QLTK.js"></script>

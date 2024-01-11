@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        td {
+            padding: 20px 60px;
+        }
+
+        table {
+            border: 1px solid black;
+        }
+
+        tr:nth-child(odd) {
+            background: beige;
+        }
+
+    </style>
+    <script src="model/Product.js"></script>
+</head>
+<body>
+<div align="center">
+    <h1>Quản Lý Sản Phẩm</h1>
+    <button  style="background: chartreuse" onclick="addProduct()">Add</button>
+    <table>
+        <tr style="background: cornflowerblue">
+            <td>STT</td>
+            <td>Name</td>
+            <td>Image</td>
+            <td>Price</td>
+            <td>Edit</td>
+            <td>Delete</td>
+        </tr>
+        <tbody id="display">
+
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+<script src="QLSP.js"></script>
